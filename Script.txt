@@ -1,0 +1,26 @@
+# ^^ Presumably this file is what I will be able to do something interesting with using MaMaDroid once I learn how it works
+===============================================================================
+Old version soot is not suitable for new emerging apk
+Compile new version soot, and change the entryPointCreator as public or add a getEntrypointer function.
+---------------------------------------------------------------------------------------------------------------------------
+
+#For convinence, put these into you ~/.bashrc files， and excute `source ~/.bashrc`
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/bin/
+export JRE_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/
+export PATH=$JAVA_HOME:$JRE_HOME:$PATH
+export DROIDBENCH=/media/nkamg/8f713913-d8f1-4474-a169-c50d222ae82e/data/experiment_QiuKefan/2020_6_14/feature_extracting/DroidBench
+export basedir=/media/nkamg/8f713913-d8f1-4474-a169-c50d222ae82e/data/experiment_QiuKefan/2020_6_14/feature_extracting/mamadroid
+export CLASSPATH=$basedir/.:$basedir/soot/soot-infoflow-android-classes-javadoc.jar:$basedir/soot/soot-infoflow-android-classes-source.jar:$basedir/soot/soot-infoflow-android-classes.jar:$basedir/soot/soot-infoflow-summaries-jar-with-dependencies.jar
+export ANDROID_HOME=/home/nkamg/Android
+export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$PATH
+export ANDROID_JARS=/home/nkamg/Android/Sdk/platforms/
+javac -cp $CLASSPATH Appgraph.java
+
+#Your platform directory should contain all platforms
+
+#This command will create some dirs in `pwd`/test/, move the graph dir out from test/
+python mamadroid.py -f `pwd`/benign/ -d $ANDROID_JARS # `pwd`/test/ is the directory to store samples
+python MaMaStat.py -d benign #
+
+
+

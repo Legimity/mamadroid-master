@@ -1,0 +1,64 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Exception in thread "main" java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.Exception: Error: The path '/media/nkamg/8f713913-d8f1-4474-a169-c50d222ae82e/data/experiment_QiuKefan/2020_6_14/feature_extracting/mamadroid/soot-trunk.jar' does not exist.
+	at soot.SourceLocator.getClassSourceType(SourceLocator.java:298)
+	at soot.SourceLocator.lookupInClassPath(SourceLocator.java:588)
+	at soot.asm.AsmClassProvider.find(AsmClassProvider.java:39)
+	at soot.SourceLocator.getClassSource(SourceLocator.java:176)
+	at soot.Scene.tryLoadClass(Scene.java:900)
+	at soot.Scene.loadBasicClasses(Scene.java:1652)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1738)
+	at Appgraph.main(Appgraph.java:57)
+Caused by: java.util.concurrent.ExecutionException: java.lang.Exception: Error: The path '/media/nkamg/8f713913-d8f1-4474-a169-c50d222ae82e/data/experiment_QiuKefan/2020_6_14/feature_extracting/mamadroid/soot-trunk.jar' does not exist.
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:526)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:487)
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:83)
+	at com.google.common.util.concurrent.Uninterruptibles.getUninterruptibly(Uninterruptibles.java:196)
+	at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2311)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2277)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2154)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2044)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3951)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3973)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4957)
+	at soot.SourceLocator.getClassSourceType(SourceLocator.java:296)
+	... 7 more
+Caused by: java.lang.Exception: Error: The path '/media/nkamg/8f713913-d8f1-4474-a169-c50d222ae82e/data/experiment_QiuKefan/2020_6_14/feature_extracting/mamadroid/soot-trunk.jar' does not exist.
+	at soot.SourceLocator$1.load(SourceLocator.java:69)
+	at soot.SourceLocator$1.load(SourceLocator.java:64)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3527)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2276)
+	... 13 more
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Exception in thread "main" java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.Exception: Error: The path '/media/nkamg/8f713913-d8f1-4474-a169-c50d222ae82e/data/experiment_QiuKefan/2020_6_14/feature_extracting/mamadroid/soot-trunk.jar' does not exist.
+	at soot.SourceLocator.getClassSourceType(SourceLocator.java:298)
+	at soot.SourceLocator.lookupInClassPath(SourceLocator.java:588)
+	at soot.asm.AsmClassProvider.find(AsmClassProvider.java:39)
+	at soot.SourceLocator.getClassSource(SourceLocator.java:176)
+	at soot.Scene.tryLoadClass(Scene.java:900)
+	at soot.Scene.loadBasicClasses(Scene.java:1652)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1738)
+	at Appgraph.main(Appgraph.java:57)
+Caused by: java.util.concurrent.ExecutionException: java.lang.Exception: Error: The path '/media/nkamg/8f713913-d8f1-4474-a169-c50d222ae82e/data/experiment_QiuKefan/2020_6_14/feature_extracting/mamadroid/soot-trunk.jar' does not exist.
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:526)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:487)
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:83)
+	at com.google.common.util.concurrent.Uninterruptibles.getUninterruptibly(Uninterruptibles.java:196)
+	at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2311)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2277)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2154)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2044)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3951)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3973)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4957)
+	at soot.SourceLocator.getClassSourceType(SourceLocator.java:296)
+	... 7 more
+Caused by: java.lang.Exception: Error: The path '/media/nkamg/8f713913-d8f1-4474-a169-c50d222ae82e/data/experiment_QiuKefan/2020_6_14/feature_extracting/mamadroid/soot-trunk.jar' does not exist.
+	at soot.SourceLocator$1.load(SourceLocator.java:69)
+	at soot.SourceLocator$1.load(SourceLocator.java:64)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3527)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2276)
+	... 13 more
